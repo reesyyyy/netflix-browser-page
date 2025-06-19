@@ -12,10 +12,13 @@ header {
   width: 100%;
 }
 
-div.background img{
-    max-width: 100%;
-    inset: 0;
+div.background img {
+  width: 100%;
+  height: 80vh; /* Adjust the height as needed */
+  object-fit: cover;
+  display: block;
 }
+
 
 .netflix-logo {
     height: 40px;
@@ -93,4 +96,25 @@ button .submit {
 }
 .row-poster:hover {
   transform: scale(1.08);
+}
+
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(150px * 16); /* 150px = width of each poster, 16 images total */
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
