@@ -36,36 +36,36 @@ header div+div {
     font-family: 'Netlix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif';
     
     padding: 7px 17px;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 1.1rem;
     border-radius: 4px 4px 4px 4px;
 }
 
 .content {
+    max-width: 655px;
+    left: 50%;
+    margin-left: -327.5px;
+    top: 185px;
+
     position: absolute;
-    inset: 0;
     align-items: center;
-    margin-top: 250px;
+    text-align: center;
     font-family: 'Netlix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif';
 }
 
 .front-heading {
-    text-align: center;
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 3.125rem;
 }
 
 .front {
-    text-align: center;
-    font-size: 1.5rem;
-    display: block;
-    line-height: 0.5;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .front2 {
-    text-align: center;
-    font-size: 1.5rem;
-    display: block;
+    font-size: 1.2rem;
+    
 }
 
 button .submit {
