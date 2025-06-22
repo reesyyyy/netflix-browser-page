@@ -13,12 +13,8 @@ header {
 }
 
 div.background img {
-  width: 100%;
-  height: 80vh; /* Adjust the height as needed */
-  object-fit: cover;
-  display: block;
+  max-width: 100%;
 }
-
 
 .netflix-logo {
     height: 40px;
@@ -48,7 +44,7 @@ header div+div {
     max-width: 655px;
     left: 50%;
     margin-left: -327.5px;
-    top: 185px;
+    top: 155px;
 
     position: absolute;
     align-items: center;
@@ -68,7 +64,6 @@ header div+div {
 
 .front2 {
     font-size: 1.2rem;
-    
 }
 
 button .submit {
@@ -78,26 +73,29 @@ button .submit {
 .row {
   margin: 30px 0 0 20px;
 }
+
 .row-title {
   font-size: 1.2rem;
   margin-bottom: 10px;
   font-weight: bold;
 }
+
 .row-posters {
   display: flex;
   gap: 10px;
   overflow-x: auto;
 }
+
 .row-poster {
   width: 150px;
   border-radius: 4px;
   transition: transform 0.2s;
   cursor: pointer;
 }
+
 .row-poster:hover {
   transform: scale(1.08);
 }
-
 
 .slider {
   overflow: hidden;
@@ -108,6 +106,7 @@ button .submit {
   display: flex;
   width: calc(150px * 16); /* 150px = width of each poster, 16 images total */
   animation: scroll 40s linear infinite;
+  margin-top: 15px;
 }
 
 @keyframes scroll {
@@ -118,3 +117,139 @@ button .submit {
     transform: translateX(-50%);
   }
 }
+
+.Reasons {
+    padding: 10px 10px;
+    font-family: 'Netlix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif';
+}
+
+.Reasons h3 {
+    font-size: 1.5rem;
+}
+
+.Reason-cards1 img {
+    margin-top: 9px;
+    width: 15%;
+}
+
+.Reasons-container .Reason-cards1 {
+    border: whitesmoke 2px solid; 
+    border-radius: 5px 5px 5px 5px;
+
+    padding: 10px 25px;  
+    background-color: rgb(27, 50, 124);
+    box-sizing: border-box;
+}
+
+.Reason-cards2 img {
+    margin-top: 10px;
+    width: 12%;
+}
+
+.Reasons-container .Reason-cards2 {
+    border: whitesmoke 2px solid; 
+    border-radius: 5px 5px 5px 5px;
+
+    padding: 10px 25px;  
+    background-color: rgb(27, 50, 124);
+    box-sizing: border-box;
+
+    margin-top: 15px;
+}
+
+.Reason-cards3 img {
+    margin-top: 10px;
+    width: 12%;
+}
+
+.Reasons-container .Reason-cards3 {
+    border: whitesmoke 2px solid; 
+    border-radius: 5px 5px 5px 5px;
+
+    padding: 10px 25px;  
+    background-color: rgb(27, 50, 124);
+    box-sizing: border-box;
+
+    margin-top: 15px;
+}
+
+.Reason-cards4 img {
+    margin-top: 10px;
+    width: 13%;
+}
+
+.Reasons-container .Reason-cards4 {
+    border: whitesmoke 2px solid; 
+    border-radius: 5px 5px 5px 5px;
+
+    padding: 10px 25px;  
+    background-color: rgb(27, 50, 124);
+    box-sizing: border-box;
+
+    margin-top: 15px;
+}
+
+.Reasons-container p {
+    font-size: 1.1rem;
+}
+
+div.FAQ-Section {
+    padding: 70px 30px;
+    font-family: 'Netlix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif';
+}
+
+div.FAQ-Section h3 {
+    margin-bottom: 23px;
+    font-size: 1.5rem;
+}
+
+div.FAQ-Question {
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+
+div.FAQ-Question svg {
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+div.FAQ-Question label.header {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+div.FAQ-Question div.Answers {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    font-size: 1.4rem;
+}
+
+div.FAQ-Question input[type="checkbox"] {
+    display: none;
+}
+
+div.FAQ-Question input[type="checkbox"]:checked ~ div.Answers {
+    padding: 30px 30px;
+    max-height: 600px;
+}
+
+div.FAQ-Question input[type="checkbox"]:checked ~ label.header svg {
+    transform: rotate(180deg);
+}
+
+.Links div {
+    font-size: 1.1rem;
+}
+
+
